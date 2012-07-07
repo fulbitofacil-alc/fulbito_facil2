@@ -1,0 +1,57 @@
+<fieldset>
+
+    <form name="RegPromEveDeportivos" action="PromocionEventoDeportivoServlet" method="post" onSubmit="return ValidarRegistroCanchaFulbito()">
+
+        <div id="nav" class="nav"><ul>
+
+                <li>Registrar Promocion Eventos Deportivos</li>
+
+            </ul></div>
+
+        <table border="0">
+
+
+            <tr><td><font class="labels">Nombre Promocion:</font></td><td><input type="text" name="NombrePromocion" size="40" class="texto"/></td></tr>
+
+            <tr><td><font class="labels">Descripcion Promocion:</font></td><td><input type="text" name="DescripcionPromocion" size="40" class="texto"/></td></tr>
+
+            <tr><td><font class="labels">Precio Promocion:</font></td><td><input type="text" name="PrecioPromocion" size="40" class="texto"/></td></tr>
+
+
+            <script languaje="JavaScript"> 
+                var mydate=new Date() 
+                var year=mydate.getYear() 
+                if (year < 1000) 
+                    year+=1900 
+                var day=mydate.getDay() 
+                var month=mydate.getMonth() 
+                var daym=mydate.getDate() 
+                if (daym<10) 
+                    daym="0"+daym 
+                var dayarray=new Array("Domingo,","Lunes,","Martes,","Miércoles,","Jueves,","Viernes,","Sábado,")
+                var montharray=new Array("Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre")
+                document.write("<font color='black' face='Georgia' style='font-size:8pt'>"+dayarray[day]+" "+daym+" de "+montharray[month]+" de "+year+"</font>") 
+            </script></font>
+
+
+
+
+            <tr><td><button type="reset">
+
+                        <img src="imagenes/delete.gif" alt="" style="height: 17px; "/>Cancelar</button>
+
+                </td><td>
+
+                    <button type="submit">
+
+                        <img src="imagenes/save.png" alt="" style="height: 17px; "/>Registrarme
+
+                    </button>
+
+                </td></tr>
+
+        </table>
+
+    </form>
+
+</fieldset>

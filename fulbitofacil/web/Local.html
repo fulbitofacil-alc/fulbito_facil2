@@ -1,0 +1,68 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Formulario</title>
+
+        <script>
+            function validar(){
+                var n = document.f1.nom.value;
+                var c = document.f1.clave.value;
+
+                if (n == ""){
+                    alert('Ingrese nombre');
+                    return false;
+                } else if( c == ""){
+                    alert('Ingrese clave');
+                    return false;
+                }
+                return true;
+            }
+        </script>
+
+    </head>
+    <body>
+
+        <form name="Local" action="" method="post" onSubmit="validar();">
+            <table>
+                <tr>
+                    <td><strong><B>REGISTRAR LOCAL</B></strong></td>
+                    <td><br/><br/><br/></td><hr>
+                </tr>
+                <tr>
+                    <td>Nombre</td>
+                    <td><input type="text" name="nombre" size="30" maxlength="30"><br/><br/></td>
+                </tr>
+                <tr>
+                    <td>Direccion:</td>
+                    <td><input type="text" name="direccion" size="60" maxlength="60"><br/><br/></td>
+                </tr>
+                <tr>
+                    <td>Distrito:</td>
+                    <td>
+                        <SELECT name="distrito">
+                            <OPTION VALUE="0">Seleccione...</OPTION>			
+                            <OPTION VALUE="1">Lima</OPTION>		
+                            <OPTION VALUE="2">Santiago de Surco</OPTION>		
+                            <OPTION VALUE="3">San Borja</OPTION>		
+                            <OPTION VALUE="4">La Victoria</OPTION>		
+                            <OPTION VALUE="5">San Isidro</OPTION>	
+                        </SELECT>
+                        <br/><br/></td>
+                </tr>
+                <tr>
+                    <td>Direccion Google Maps:</td>
+                    <td><input type="text" name="dire_google" size="40" maxlength="40"><br/><br/></td>
+                </tr>
+                <tr>
+                    <td>Telefono Fijo:</td>
+                    <td><input type="text" name="telefono" size="10" maxlength="10"><br/><br/></td>
+                </tr>
+                <tr>
+                    <td><br/><br/><strong><input type="submit" value="Registrar"></strong></td>
+                    <td><br/><br/><strong><input type="submit" value="Cancelar"></strong></td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>

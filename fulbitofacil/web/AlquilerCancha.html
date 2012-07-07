@@ -1,0 +1,76 @@
+<fieldset>
+
+    <form name="AlqCanchaFulbito" action="AlquilerCanchaServlet" method="post" onSubmit="return ValidarRegistroCanchaFulbito()">
+
+        <div id="nav" class="nav"><ul>
+
+                <li>Alquiler Cancha de Fulbito</li>
+
+            </ul></div>
+
+        <table border="0">
+
+
+            <tr>
+                <td>Cancha de Fulbito:</td>
+                <td>
+                    <SELECT name="CanchaFulbito">
+                        <OPTION VALUE="0">Seleccione...</OPTION>			
+                        <OPTION VALUE="1">Cancha Fulbito 1</OPTION>		
+                        <OPTION VALUE="2">Cancha Fulbito 2</OPTION>		
+                        <OPTION VALUE="3">Cancha Fulbito 3</OPTION>		
+                        <OPTION VALUE="4">Cancha Fulbito 4</OPTION>		
+                        <OPTION VALUE="5">Cancha Fulbito 5</OPTION>
+                        <OPTION VALUE="6">Cancha Fulbito 6</OPTION>		
+                        <OPTION VALUE="7">Cancha Fulbito 7</OPTION>		
+
+                    </SELECT>
+                    <br/><br/></td>
+            </tr>
+
+
+
+            <tr><td><font class="labels">Fecha:</font></td><td><input type="text" name="Fecha" size="40" class="texto"/></td></tr>
+
+            <tr><td><font class="labels">Hora Inicio:</font></td><td><input type="text" name="HoraInicio" size="40" class="texto"/></td></tr>
+
+            <tr><td><font class="labels">Hora Fin:</font></td><td><input type="text" name="HoraFin" size="40" class="texto"/></td></tr>
+
+
+            <script languaje="JavaScript"> 
+                var mydate=new Date() 
+                var year=mydate.getYear() 
+                if (year < 1000) 
+                    year+=1900 
+                var day=mydate.getDay() 
+                var month=mydate.getMonth() 
+                var daym=mydate.getDate() 
+                if (daym<10) 
+                    daym="0"+daym 
+                var dayarray=new Array("Domingo,","Lunes,","Martes,","Miércoles,","Jueves,","Viernes,","Sábado,")
+                var montharray=new Array("Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre")
+                document.write("<font color='black' face='Georgia' style='font-size:8pt'>"+dayarray[day]+" "+daym+" de "+montharray[month]+" de "+year+"</font>") 
+            </script></font>
+
+
+
+
+            <tr><td><button type="reset">
+
+                        <img src="imagenes/delete.gif" alt="" style="height: 17px; "/>Cancelar</button>
+
+                </td><td>
+
+                    <button type="submit">
+
+                        <img src="imagenes/save.png" alt="" style="height: 17px; "/>Registrarme
+
+                    </button>
+
+                </td></tr>
+
+        </table>
+
+    </form>
+
+</fieldset>

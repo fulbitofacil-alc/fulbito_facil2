@@ -1,0 +1,64 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+        <form name="frm" action="EventoDeportivoServlet" method="post">
+             <input type="hidden" name="metodo" value="registrar" />
+    <center> <table border="0">
+            <tr>
+                <td colspan="3">
+                    <h1>Registrar Evento Deportivo</h1>
+                </td>
+                <td rowspan="7"><img src="img/eventos_deportivos.jpg" width="150" height="150"></td>
+            </tr>
+                <tr>
+                <td>
+                    Fecha Del Evento :
+                </td>
+                <td><input type="text" name="txtfecha" value="" maxlength="5" /></td>
+                <td></td>
+                    
+            </tr>
+            <tr>
+                <td>
+                    Nombre Del Evento Deportivo :
+                </td>
+                <td><input type="text" name="txtnombre" value="" /></td>
+                <td></td>
+                    
+            </tr>
+                 <tr>
+                <td>
+                    Premio que se Otorga :
+                </td>
+                <td><input type="text" name="txtpremio" value="" /></td>
+                <td></td>
+                    
+            </tr>
+             <tr>
+                <td>
+                    Cantidad de Equipos:
+                </td>
+                <td><input type="text" name="txtcantidad" value="" maxlength="5" /></td>
+                <td></td>
+                    
+            </tr>
+             <tr>
+                 <td colspan="2">
+             <center>
+                 <input type="submit" value="Registrar" /> <input type="submit" value="Cancelar" />
+             </center>         
+               </td>
+               <td></td>
+            </tr>
+        </table></center>
+            </form>
+    </body>
+</html>

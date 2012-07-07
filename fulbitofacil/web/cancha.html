@@ -1,0 +1,91 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Formulario</title>
+
+    </head>
+    <body>
+
+        <form name="Local" action="" method="post" onSubmit="validar();">
+            <table>
+                <tr>
+                    <td><strong><B>REGISTRAR CANCHA</B></strong></td>
+                    <td><br/><br/><br/></td><hr>
+                </tr>
+
+                <tr>
+                    <td>Local:</td>
+                    <td>
+                        <SELECT name="distrito">
+                            <OPTION VALUE="0">Seleccione...</OPTION>			
+                            <OPTION VALUE="1">Local 1</OPTION>		
+                            <OPTION VALUE="2">Local 2</OPTION>		
+                            <OPTION VALUE="3">Local 3</OPTION>		
+                            <OPTION VALUE="4">Local 4</OPTION>		
+                            <OPTION VALUE="5">Local 5</OPTION>	
+                        </SELECT>
+                        <br/><br/></td>
+                </tr>
+
+                <tr>
+                    <td>Caracteristicas:</td>
+                    <td><input type="text" name="nombre" size="60" maxlength="60"><br/><br/></td>
+                </tr>
+
+                <tr>
+                    <td>Dias:</td>
+                    <td>
+                        <SELECT name="distrito">
+                            <OPTION VALUE="0">Seleccione...</OPTION>			
+                            <OPTION VALUE="1">Lunes</OPTION>		
+                            <OPTION VALUE="2">Martes</OPTION>		
+                            <OPTION VALUE="3">Miercoles</OPTION>		
+                            <OPTION VALUE="4">Jueves</OPTION>		
+                            <OPTION VALUE="5">Viernes</OPTION>
+                            <OPTION VALUE="6">Sabado</OPTION>		
+                            <OPTION VALUE="7">Domingo</OPTION>	
+                        </SELECT>
+                        <br/><br/></td>
+                </tr>
+
+                <tr>
+                    <td>Hora:</td>
+                    <td>
+                        <SELECT name="hora">
+                            <OPTION VALUE="0">Seleccione...</OPTION>			
+                            <OPTION VALUE="1">8:00 AM</OPTION>		
+                            <OPTION VALUE="2">9:00 AM</OPTION>		
+                            <OPTION VALUE="3">10:00 AM</OPTION>		
+                            <OPTION VALUE="4">11:00 AM</OPTION>		
+                            <OPTION VALUE="5">12:00 PM</OPTION>
+                            <OPTION VALUE="6">1:00 PM</OPTION>		
+                            <OPTION VALUE="7">2:00 PM</OPTION>		
+                            <OPTION VALUE="8">3:00 PM</OPTION>		
+                            <OPTION VALUE="9">4:00 PM</OPTION>		
+                            <OPTION VALUE="10">5:00 PM</OPTION>
+                            <OPTION VALUE="11">6:00 PM</OPTION>		
+                            <OPTION VALUE="12">7:00 PM</OPTION>		
+                            <OPTION VALUE="13">8:00 PM</OPTION>
+                            <OPTION VALUE="14">9:00 PM</OPTION>		
+                            <OPTION VALUE="15">10:00 PM</OPTION>
+
+                        </SELECT>
+                        <br/><br/></td>
+                </tr>
+                <tr>
+                    <td>Tarifas:</td>
+                    <td><input type="text" name="dire_google" size="10" maxlength="10"><br/><br/></td>
+                </tr>
+                <tr>
+                    <td>Promocion:</td>
+                    <td><input type="text" name="telefono" size="40" maxlength="40"><br/><br/></td>
+                </tr>
+                <tr>
+                    <td><br/><br/><strong><input type="submit" value="Registrar"></strong></td>
+                    <td><br/><br/><strong><input type="submit" value="Cancelar"></strong></td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>
